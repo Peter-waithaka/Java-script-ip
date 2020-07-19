@@ -21,3 +21,9 @@
     height: 700px;
     width: 500px;
 }
+body{
+    background-image: url(../images/akan.jpeg);
+    background-repeat: no-repeat;
+    width: 50px;
+    
+}
