@@ -15,15 +15,12 @@
 .minor-3{
     margin-left: 110px;
 }
-#image{
-    margin-right: 50px;
-    padding-bottom: 70%;
-    height: 700px;
-    width: 500px;
-}
+
+
 body{
     background-image: url(../images/akan.jpeg);
     background-repeat: no-repeat;
-    width: 50px;
-    
+    width: 500px;
+    height: 700px;
+
 }

@@ -36,3 +36,8 @@ function myFunction() {
  
 // Day_of_the_week (d) = ( ( (CC/4) -2*CC-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day )
 // console.log(d)
+function checkDayOfWeek(){
+    day = calculateDay();
+     checkGender();
+     console.log("The function runs");//Test chackDayOfWeek function
+}
