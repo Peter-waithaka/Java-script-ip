@@ -37,7 +37,7 @@ const dateValidation = date => {
       setDateIsInvalid(false)
       return true
   }
-
+}
 //main caller func
  function checkDayOfWeek(){
      day = calculateDay();
@@ -113,7 +113,7 @@ function checkGender(){
         default:
         console.log("pass");//Test gender switch
     }
-}
+  }
 
 
 
@@ -127,6 +127,3 @@ function checkGender(){
 
 
 
-
-
-    
