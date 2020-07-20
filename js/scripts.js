@@ -1,6 +1,4 @@
-var century, year, month, dayOfMonth, dayOfWeek, day;
-//Get input
-function getInput(){
+  function getInput(){
   century = parseInt(document.getElementById("century").value);
   year = parseInt(document.getElementById("year").value);
   month = parseInt(document.getElementById("month").value);
@@ -27,7 +25,18 @@ function getInput(){
   }
 }
 //Calculate func
- 
+ function calculateDay(){
+    dayOfWeek = ((((century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + dayOfMonth) % 7) -1;
+    console.log(dayOfWeek); //Test the calculateDay function
+    return (Math.floor(dayOfWeek));
+    if (dayOfWeek < 0) {
+      dayOfWeek = dayOfWeek * -1;
+    }
+    else if (dayOfWeek > 0) {
+      return dayOfWeek;
+    }
+}
+
 //main caller func
  function checkDayOfWeek(){
      day = calculateDay();
@@ -104,3 +113,19 @@ function checkGender(){
         console.log("pass");//Test gender switch
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
