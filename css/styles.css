@@ -6,21 +6,17 @@
  padding-left: 700px;
 
 }
-.minor-1{
-    margin-left: 100px;
-}
-.minor-2{
-    margin-left: 70px;
-}
-.minor-3{
-    margin-left: 110px;
-}
 
 
 body{
+    font-size: 35px;
     background-image: url(../images/akan.jpeg);
     background-repeat: no-repeat;
     width: 500px;
     height: 700px;
 
 }
+.header{
+   float: center;
+}
+
