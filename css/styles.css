@@ -15,7 +15,7 @@ h1{
   box-shadow: 1px 0px 2px #ffffff;
 }
 .left{
-  background-image:;
+  background-image: url(../images/akan.jpeg);
   background-size: center;
   height: 670px;
   border-radius: 10px 0 0 10px;
@@ -60,7 +60,7 @@ h1{
 .q-text{
   color: #fdd043;
   font-size: 30px;
-@@ -56,8 +66,8 @@ h1{
+
 }
 #result{
   margin-top: 30px;
@@ -72,7 +72,7 @@ h1{
 .rounded-circle{
   margin-left: 40%;
 }
- BIN +954 Bytes (
+ 
 
 
 

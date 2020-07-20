@@ -5,6 +5,7 @@ function getInput(){
   year = parseInt(document.getElementById("year").value);
   month = parseInt(document.getElementById("month").value);
   dayOfMonth = parseInt(document.getElementById("monthday").value);
+}
 
 
   if((century == "") && (century <= 0) && (century >= 30)){
@@ -26,7 +27,7 @@ function getInput(){
   }
 }
 //Calculate func
-@@ -23,6 +27,12 @@ function calculateDay(){
+ function calculateDay(){
     dayOfWeek = ((((century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + dayOfMonth) % 7) -1;
     console.log(dayOfWeek); //Test the calculateDay function
     return (Math.floor(dayOfWeek));
@@ -114,44 +115,3 @@ function checkGender(){
         console.log("pass");//Test gender switch
     }
 }
-
-
-
-
-
-
-/ function myFunction() {
-//     // var day_element = document.getElementById("day");
-//     // var day = day_element.value;
-//     // console.log(day)
-
-//     // var month_element = document.getElementById("month");
-//     // var month = month_element.value;
-//     // console.log(month)
-
-//     // var year_element = document.getElementById("year");
-//     // var year = year_element.value;
-//     // var year_arr =(year).toString().split('',2).map(Number);
-//     // var cc = Number(year_arr.join(''));
-//     // console.log(year)
-    
-  
-//     // console.log(year_arr)
-//     // console.log(cc)
-
-//     var currentDate = document.getElementById('datepicker').value;
-//     alert(currentDate);
-//     var n = currentDate.getDay()
-//     console.log(n);
-//     const rbs = document.querySelectorAll('input[name="gender"]');
-//     let selectedValue;
-//     for (const rb of rbs) {
-//         if (rb.checked) {
-//             selectedValue = rb.value;
-//             break;
-//         }
-//     }
-//     console.log(selectedValue)
-
-// }
-
