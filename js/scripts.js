@@ -24,18 +24,19 @@
     return false;
   }
 }
-//Calculate func
- function calculateDay(){
-    dayOfWeek = ((((century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + dayOfMonth) % 7) -1;
-    console.log(dayOfWeek); //Test the calculateDay function
-    return (Math.floor(dayOfWeek));
-    if (dayOfWeek < 0) {
-      dayOfWeek = dayOfWeek * -1;
-    }
-    else if (dayOfWeek > 0) {
-      return dayOfWeek;
-    }
-}
+
+
+const dateValidation = date => {
+  console.log('datefrom dateValidation', date);
+  const dateFormat = /([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/;
+  console.log('match', dateFormat.test(date));
+  if (!dateFormat.test(date) || date === null || date === '' || date === undefined) {
+      setDateIsInvalid(true)
+      return false
+  } else {
+      setDateIsInvalid(false)
+      return true
+  }
 
 //main caller func
  function checkDayOfWeek(){
