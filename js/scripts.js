@@ -6,24 +6,24 @@
 }
 
 
-  if((century == "") && (century <= 0) && (century >= 30)){
-  if(century == ""){
-    alert("Input the correct gender");
-  }else if ((year == "") && (year <= 0) && (year > 5000)){
-    return false;
-  }else if (year == ""){
-    alert("Input the correct year");
-  }else if ((month == "") && (month > 12) && (month <= 0)) {
-    return false;
-  }else if (month == ""){
-    alert("Input the correct month");
-  }else if((dayOfMonth == "") && (dayOfMonth > 31) && (dayOfMonth <= 0)){
-    return false;
-  }else if(dayOfMonth == ""){
-    alert("input the correct date");
-    return false;
-  }
-}
+  //    if((century == "") && (century <= 0) && (century >= 30)){
+//   if(century == ""){
+//     alert("Input the correct gender");
+//   }else if ((year == "") && (year <= 0) && (year > 5000)){
+//     return false;
+//   }else if (year == ""){
+//     alert("Input the correct year");
+//   }else if ((month == "") && (month > 12) && (month <= 0)) {
+//     return false;
+//   }else if (month == ""){
+//     alert("Input the correct month");
+//   }else if((dayOfMonth == "") && (dayOfMonth > 31) && (dayOfMonth <= 0)){
+//     return false;
+//   }else if(dayOfMonth == ""){
+//     alert("input the correct date");
+//     return false;
+//   }
+// }
 
 
 const dateValidation = date => {
