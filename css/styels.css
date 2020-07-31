@@ -6,10 +6,8 @@
     height: 100vh;
 }
 .text{
-    background-color: blue;
+    background-color:black;
+    background-image: url(../images/kids.png);
 }
-.container{
-    background-color: blue;
-}
-    
+
 
