@@ -1,50 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title></title>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="jumbotron parent">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="jumbotron p-0 left">
-                <div class="overlay">
-                  <h1 class="text-center akan">Akan Names</h1>
-                  <hr class="my-4">
-                  <img src="./images/ghana">
-                  <p class="p-text">The Akan people of Ghana name their children after the day of the week
-                    they were born.</p>
-                    <p class="p-text">These "day names" have further meanings concerning the soul and character of the person.</p>
-                    <p class="q-text text-center">What's your akan name?</p>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6 right">
-            <div class="panel col-sm-6 offset-sm-3">
-                    <div class="form-group top-form">
-                      <label for="century" class="labels">Century</label>
-                      <input type="number" class="form-control" placeholder="Enter the century" id="century" required  min="0" max="30">
-                   
-                    <form class="radio-button">
-                      <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
-                      <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
-                    </form>
-                    <br>
-                    <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
-                    </div>
-                    <label for="birthday">Birthday:</label>
-                    <input type="date" id="birthday" name="birthday">
-                     <h1 id="result"></h1>
-            </div>
-          </div>
-        </div> -->
-        
-      </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>akan names</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/styels.css">
+</head>
+<body>
+  <div class="landingpage text-center text-white">
+    <h1>AKAN NAMES</h1>
+
   </div>
-  <script src="js/scripts.js"></script>
-  </body>
+  <div class="text text-black text-center">
+    <h1>About Akan Names</h1>
+    <p>The akan people named there children after week days</p><br>
+    <p>This names describe alot about a person</p><br>
+    <p>so in this site you just fill in your details to get your akan name</p>
+  <div class="container text-center">
+    <div class="form-group ">
+        <form action="form" onsubmit="getAkanName()">
+        <label for="date" class="input-group text-center">Date of Birth :</label>
+            <input type="date" id="dateofbirth" class="form-control" placeholder="mm/dd/yy" autocomplete="off">
+    </div>
+
+    <label class="label">Gender</label>
+        <div class="rdio rdio-default">
+            <input type="radio" name="gender" id="male" value="Male">
+    <label for="male">Male</label>
+        </div>
+    <div class="rdio rdio-default">
+            <input type="radio" name="gender" value="Female" id="female">
+    <label for="female">Female</label>
+        </div>
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary mb-2" onclick="getAkanName()">Submit</button>
+        <div class="output">
+            <h1><p id="message"></p></h1>
+        </div>
+</form>
+</div>
+
+  </div>
+
+
+
+
+  
+  
+  <script src="./js/scripts.js"></script>
+</body>
 </html>
